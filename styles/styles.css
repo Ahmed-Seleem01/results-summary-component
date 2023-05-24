@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "hanken grotesk";
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("ttf");
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: "hanken grotesk", sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+p{
+  font-size: 18px;
+  font-weight: 500;
+}
