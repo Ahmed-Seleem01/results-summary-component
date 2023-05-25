@@ -33,19 +33,44 @@ main.cards-container{
   grid-template-rows: 1fr 1fr;
   /* height: 100%; */
 }
+section.card-1, section.card-2{
+  flex-direction: column;
+  width: 100%;
+}
 section.card-1{
+  padding: 10px 30px 40px;
   grid-row: 1 / 2;
   border: 2px solid;
   text-align: center;
+  border-radius: 0 0 40px 40px;
+}
+
+section.card-1 .result{
+  width: 10em;
+  height: 10em;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.result > p{
+  margin-top: 30px;
+}
+.result > p > strong{
+  font-size: 4rem;
+}
+.result + p{
+  font-size: 2rem;
+  margin-bottom: -5px;
 }
 section.card-2{
   z-index: -1;
   margin-top: -20px;
   grid-row: 2 / 3;
   border: 2px solid red;
+  align-items: flex-start;
 }
 section.card-2 > ul{
   /* border: 2px solid; */
+  width: 100%;
   list-style: none;
   padding: 0;
 }
