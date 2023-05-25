@@ -44,13 +44,22 @@ section.card-1{
   border: 2px solid;
   text-align: center;
   border-radius: 0 0 40px 40px;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color:hsla(0, 0%, 100%, 0.7);
+  /* Light slate blue (background): hsl(252, 100%, 67%)
+  - Light royal blue (background): hsl(241, 81%, 54%) */
 }
-
+strong{
+  color: white;
+}
 section.card-1 .result{
   width: 10em;
   height: 10em;
-  border: 1px solid;
+  /* border: 1px solid; */
   border-radius: 50%;
+  background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  /* Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0) */
 }
 .result > p{
   margin-top: 30px;
