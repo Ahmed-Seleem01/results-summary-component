@@ -2,6 +2,13 @@
   font-family: "hanken grotesk";
   src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("ttf");
 }
+/* Create flex container with column direction */
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Set box sizing to border-box for all elements */
 *{
   box-sizing: border-box;
 }
@@ -13,4 +20,45 @@ body{
 p{
   font-size: 18px;
   font-weight: 500;
+}
+.container{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 30px;
+}
+main.cards-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* height: 100%; */
+}
+section.card-1{
+  grid-row: 1 / 2;
+  border: 2px solid;
+  text-align: center;
+}
+section.card-2{
+  z-index: -1;
+  margin-top: -20px;
+  grid-row: 2 / 3;
+  border: 2px solid red;
+}
+section.card-2 > ul{
+  /* border: 2px solid; */
+  list-style: none;
+  padding: 0;
+}
+
+section.card-2 > ul > li{
+  justify-content: space-between;
+  border: 2px solid;
+}
+
+section.card-2 > button{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
 }
