@@ -142,13 +142,14 @@ section.card-2 > button:hover {
   cursor: pointer;
   background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
-footer.attribution {
-  font-size: 11px;
+footer .attribution {
+  font-size: 14px;
   text-align: center;
   align-self: center;
   justify-self: center;
+  padding: 10px;
 }
-footer.attribution a {
+footer .attribution a {
   color: hsl(228, 45%, 44%);
 }
 @media (min-width: 600px) {
