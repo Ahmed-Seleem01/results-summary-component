@@ -1,6 +1,7 @@
 @font-face {
   font-family: "hanken grotesk";
-  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("ttf");
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+  font-weight: 100 1000;
 }
 /* Create flex container with column direction */
 .flex-container {
@@ -56,6 +57,7 @@ section.card-1 .result{
 }
 .result > p{
   margin-top: 30px;
+  color: hsl(252, 100%, 75%)
 }
 .result > p > strong{
   font-size: 4rem;
@@ -99,6 +101,12 @@ ul > li:nth-child(4){
   background-color: hsl(234, 85%, 45%, 0.05);
   color: hsl(234, 85%, 45%);
 }
+ul span:first-child{
+  color: hsl(224, 30%, 27%);
+}
+ul span:last-child{
+  color: hsla(224, 30%, 27%, 0.5);
+}
 section.card-2 > ul > li > div{
   gap: 10px;
 }
@@ -111,5 +119,5 @@ section.card-2 > button{
   border: 1px solid #000;
   border-radius: 40px;
   background: hsl(224, 30%, 27%);
-  color:hsla(0, 0%, 100%, 0.7);
+  color:hsl(0, 0%, 100%);
 }
