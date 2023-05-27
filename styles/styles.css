@@ -41,7 +41,7 @@ section.card-1, section.card-2{
 }
 section.card-1{
   justify-content: start;
-  padding: 10px 40px 40px;
+  padding: 10px 40px 20px;
   grid-row: 1 / 2;
   border: 2px solid;
   text-align: center;
@@ -53,13 +53,14 @@ strong{
   color: white;
 }
 section.card-1 .result{
-  width: 10em;
-  height: 10em;
+  width: 9em;
+  height: 9em;
   border-radius: 50%;
+  margin-top: 10px;
   background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 .result > p{
-  margin-top: 30px;
+  margin-top: 25px;
   color: hsl(252, 100%, 75%)
 }
 .result > p > strong{
@@ -78,7 +79,8 @@ section.card-2{
   font-stretch:narrower;
 }
 section.card-2 > h2{
-  color:hsla(0, 0%, 0%, 0.8)
+  color:hsla(0, 0%, 0%, 0.8);
+  margin-top: 50px;
 }
 section.card-2 > ul{
   width: 100%;
