@@ -12,11 +12,14 @@
 /* Set box sizing to border-box for all elements */
 *{
   box-sizing: border-box;
+  font-weight: 800;
 }
 body{
   font-family: "hanken grotesk", sans-serif;
-  font-weight: 800;
   margin: 0;
+}
+h1,h2{
+  font-size: 1.2rem;
 }
 p{
   font-size: 18px;
@@ -38,7 +41,7 @@ section.card-1, section.card-2{
 }
 section.card-1{
   justify-content: start;
-  padding: 10px 30px 40px;
+  padding: 10px 40px 40px;
   grid-row: 1 / 2;
   border: 2px solid;
   text-align: center;
@@ -60,10 +63,10 @@ section.card-1 .result{
   color: hsl(252, 100%, 75%)
 }
 .result > p > strong{
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .result + p{
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: -5px;
 }
 section.card-2{
@@ -72,6 +75,10 @@ section.card-2{
   margin-top: -30px;
   grid-row: 2 / 3;
   align-items: flex-start;
+  font-stretch:narrower;
+}
+section.card-2 > h2{
+  color:hsla(0, 0%, 0%, 0.8)
 }
 section.card-2 > ul{
   width: 100%;
@@ -102,10 +109,10 @@ ul > li:nth-child(4){
   color: hsl(234, 85%, 45%);
 }
 ul span:first-child{
-  color: hsl(224, 30%, 27%);
+  color: hsl(258, 18%, 30%);
 }
 ul span:last-child{
-  color: hsla(224, 30%, 27%, 0.5);
+  color: hsl(273, 6%, 63%);
 }
 section.card-2 > ul > li > div{
   gap: 10px;
