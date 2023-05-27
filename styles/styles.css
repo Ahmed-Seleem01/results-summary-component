@@ -35,15 +35,17 @@ main.cards-container{
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1.2fr;
 }
+
 section.card-1, section.card-2{
   flex-direction: column;
   width: 100%;
+  box-shadow: 0 0 20px 2px rgb(230, 230, 230);
 }
 section.card-1{
   justify-content: start;
   padding: 10px 40px 20px;
   grid-row: 1 / 2;
-  border: 2px solid;
+  /* border: 2px solid; */
   text-align: center;
   border-radius: 0 0 40px 40px;
   background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -130,3 +132,46 @@ section.card-2 > button{
   background: hsl(224, 30%, 27%);
   color:hsl(0, 0%, 100%);
 }
+footer.attribution {
+  font-size: 11px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+footer.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+  @media (min-width: 600px){
+    .container{
+      min-height: 100vh;
+      place-content: center;
+      place-items: center;
+    }
+    .container main.cards-container{
+      grid-template-columns: repeat(2, minmax(300px, 320px));
+      grid-template-rows: 1fr;
+      place-content: center;
+    }
+    main.cards-container section.card-1{
+      justify-content: flex-start;
+      border-radius: 30px;
+      grid-column: 1 / 2;
+    }
+    main.cards-container section.card-2{
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      border-radius: 0 30px 30px 0;
+      margin-top: 0;
+      margin-left: -30px;
+      padding: 30px 30px 30px 60px;
+      justify-content: flex-start;
+    }
+    main.cards-container section.card-2 h2{
+      padding: 0;
+      margin: 0;
+    }
+  
+    section.card-2 ul li p{
+      margin: 12px 5px;
+    }
+  }
